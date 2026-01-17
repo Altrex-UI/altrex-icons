@@ -1,6 +1,6 @@
 {
   "name": "@altrex-ui/icons",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Altrex Icons - SVG icon library",
   "type": "module",
   "exports": {
