@@ -1,6 +1,6 @@
 {
   "name": "@altrex-ui/icons",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Altrex Icons - SVG icon library",
   "type": "module",
   "exports": {
@@ -9,7 +9,11 @@
     "./icons.json": "./icons.json",
     "./iconify/altrex-generic.json": "./iconify/altrex-generic.json",
     "./iconify/altrex-brand.json": "./iconify/altrex-brand.json",
-    "./iconify/altrex-flag.json": "./iconify/altrex-flag.json"
+    "./iconify/altrex-flag.json": "./iconify/altrex-flag.json",
+    "./react-native": "./react-native/index.ts",
+    "./react-native/generic": "./react-native/generic.tsx",
+    "./react-native/brand": "./react-native/brand.tsx",
+    "./react-native/flag": "./react-native/flag.tsx"
   },
   "scripts": {
     "clean": "rimraf altrex.svg icons.json iconify",
@@ -65,10 +69,16 @@
     "svgo": "^3.3.2",
     "typescript": "^4.9.5"
   },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.73",
+    "react-native-svg": ">=14"
+  },
   "files": [
     "altrex.svg",
     "icons.json",
     "iconify/",
-    "icons/"
+    "icons/",
+    "react-native/"
   ]
 }
